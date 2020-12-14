@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Document</title>
+    <script src="vue.min.js"></script>
+</head>
+<body>
+    <div id="vue_det">
+        <h1>site: {{site}}</h1>
+        <h1>url: {{url}}</h1>
+        <h1>{{details()}}</h1>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#vue_det',
+            data: {
+                site: 'Jimmy HOME',
+                url: "Macau",
+                alexa: "10000"
+            },
+            methods: {
+                details: function(){
+                    return this.site + " - FLY TO THE MOON."
+                }
+            }
+        })
+    </script>
+</body>
+</html>
