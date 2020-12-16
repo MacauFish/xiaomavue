@@ -21,5 +21,4 @@ if __name__ == "__main__":
     pw.start()
     pr.start()
     pw.join()
-    pr.join()
     pr.terminate()
